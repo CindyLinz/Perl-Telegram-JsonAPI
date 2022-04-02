@@ -1,0 +1,6 @@
+Revision history for Perl extension Telegram::JsonAPI.
+
+0.01  Sat Apr  2 10:06:12 2022
+	- original version; created by h2xs 1.23 with options
+		-n Telegram::JsonAPI
+
