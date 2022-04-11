@@ -1,6 +1,6 @@
 package Telegram::JsonAPI;
 
-use 5.030002;
+use 5.018;
 use strict;
 use warnings;
 use Carp;
@@ -23,7 +23,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw(
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 require XSLoader;
 XSLoader::load('Telegram::JsonAPI', $VERSION);
