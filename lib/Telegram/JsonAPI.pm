@@ -23,7 +23,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw(
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 require XSLoader;
 XSLoader::load('Telegram::JsonAPI', $VERSION);
@@ -71,7 +71,7 @@ Telegram::JsonAPI - Telegram TDLib's JSON API
 
 =head1 DESCRIPTION
 
-This module integrate L<Telegram|https://telegram.org/>'s TDLib L<JSON API|https://core.telegram.org/tdlib/docs/td__json__client_8h.html>.
+This module integrated L<Telegram|https://telegram.org/>'s TDLib L<JSON API|https://core.telegram.org/tdlib/docs/td__json__client_8h.html>.
 which is used to implement Telegram client app. The difference between an app and a bot is that an app will act as an normal user.
 And you need to authenticate it with a phone number.
 
@@ -132,18 +132,6 @@ This is a short example which implemented user authentication and send a text me
   td_send($client_id, encode_json({'@type' => 'getAuthorizationState', '@extra' => \1.01234}));
 
   while(1) {
-    if( $authed ) {
-      my($mn, $hr) = (localtime)[1,2];
-      if( $hr==7 && $mn >= 58 || $hr==8 && $mn < 2 ) {
-        say "$hr:$mn fetching...";
-        if( my $q = fetch_daily_question() ) {
-          say encode_json($q);
-          $q->{date} =~ s/\D//g;
-        }
-      } else {
-        say "$hr:$mn skiped.";
-      }
-    }
     td_poll_log sub { say "got log: @_"; };
     my $msg = td_receive(1);
     if( defined $msg ) {
