@@ -219,7 +219,7 @@ Or you can get it from [https://github.com/tdlib/td](https://github.com/tdlib/td
 
 # AUTHOR
 
-Cindy Wang (CindyLinz) &lt;cindy@cpan.orgE&lt;/gt>
+Cindy Wang (CindyLinz) <cindy@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
@@ -228,11 +228,3 @@ Copyright (C) 2022 by CindyLinz
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.30.2 or,
 at your option, any later version of Perl 5 you may have available.
-
-# POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 263:
-
-    Unknown E content in E&lt;/gt>

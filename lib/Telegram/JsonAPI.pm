@@ -260,7 +260,7 @@ L<https://core.telegram.org/tdlib/docs/td__api_8h.html>
 
 =head1 AUTHOR
 
-Cindy Wang (CindyLinz) E<lt>cindy@cpan.orgE</gt>
+Cindy Wang (CindyLinz) E<lt>cindy@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
